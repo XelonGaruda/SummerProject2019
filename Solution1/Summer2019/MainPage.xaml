@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Summer2019.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Summer2019"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock FontFamily="cursive" FontSize="150" HorizontalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="4">Summer Practice</TextBlock>
+        <TextBlock VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="4">Here you can choose wich type on quizz you will attend, only chose the one you are confident with</TextBlock>
+        <Button FontSize="25" Grid.Row="2" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="130" Width="269" Click="Button_ClickTitle">Find the title</Button>
+        <Button FontSize="25" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="130" Width="269" Click="Button_ClickArtist">Find the Artist</Button>
+        <Button FontSize="25" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="130" Width="269" Click="Button_ClickAlbum">Find the album name</Button>
+        <Button FontSize="25" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="130" Width="269" Click="Button_ClickDuration">Find the duration</Button>
+
+    </Grid>
+</Page>
